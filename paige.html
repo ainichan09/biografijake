@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paige</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h1{
+  font-family: 'Nosifer', serif;
+  
+    }
+
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(296deg, #fff, #ffe6b4, #ffd078, #fff0c8, #fffdfd);
+    background-attachment: fixed;
+    overflow-x: hidden;
+        }
+       
+   
+
+    .text-section {
+      flex:1 ;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+   
+    .info-box {
+      padding: 3px 30px;
+      border-right: 1px solid #a16b00;
+      border-bottom: 2px solid #a16b00;
+      font-size: 1.1rem;
+      color: #4a2f00;
+      font-weight: 60;
+      min-width: 5px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    
+    .info-box:hover {
+      background: #fff3d1;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .label {
+      display: block;
+      font-size: 1.2rem;
+      color: #4a2f00;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .value {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      color: #7D5100;
+      margin-top: 6px;
+      font-weight: 500px;
+    }
+
+    .text-section {
+    flex: 1;
+    position: relative;
+    left: 50px;
+    top: 220px;
+    }
+
+    .text-section h1 {
+        position: relative;
+        top: -100px;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #7D5100;
+      text-shadow: 2px 4px 9px rgba(0,0,0,0.4);
+    
+    }
+
+    .text-section p {
+        
+      font-size: 1.3rem;
+      color: #5a3e00;
+      margin-top: 200px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    .ftpaige {
+        left: -100px;
+        top: -90px;
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      
+    }
+
+    .ftpaige img {
+      width: 750px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+    }
+
+      .ftpaige {
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .ftpaige img {
+        width: 80%;
+      }
+    
+
+
+    .ftpaige {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+.number-box {
+  position: absolute;
+  bottom: -70px; 
+  right: -520px; 
+  width: 1120px; 
+  height: 150px;
+  background: linear-gradient(90deg, #7D5100, #d4a15c);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  z-index: 1; 
+}
+
+
+.ftpaige img {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.number {
+  position: absolute;
+  bottom: -16px;
+  left: 730px; 
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 200px;
+  color: #ffffff;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  transform: rotate(-6deg);
+  z-index: 3; 
+}
+
+    .logotim{
+        position: fixed;         
+      top: 20px;              
+      left: 20px;              
+      width: 70px;             
+      height: auto;       
+      z-index: 1000; 
+    }
+
+    .section-line {
+  width: 80%;
+  margin: 60px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #a16b00, #ffcc66, #a16b00);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+
+.bio-section, .reason-section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  color: #4a2f00;
+  line-height: 1.8;
+}
+
+
+.bio-section h2, .reason-section h2 {
+  text-align: center;
+  color: #7D5100;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+
+section {
+  scroll-margin-top: 100px;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.bio-section p {
+  font-size: 1.2rem;
+  color: #4a2f00;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.bio-section p:hover {
+  transform: scale(1.01);
+}
+
+.highlight {
+  background: linear-gradient(90deg, #ffd700, #ffa500);
+  color: #4a2f00;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.emphasis {
+  color: #7D5100;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 5px solid #ffa500;
+  font-style: italic;
+  color: #5a3e00;
+  background: #fff3d1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    .bio-section p::before {
+    content: "•"; 
+    color: #7D5100; 
+    font-size: 1.5rem; 
+    display: inline-block;
+    width: 1.5em; 
+    margin-left: -1.5em; 
+} 
+
+   
+</style>
+
+<body>
+ 
+  <img src="Dallas_Wings_logo.svg-removebg-preview.png" alt="logo" class="logotim">
+
+  
+  <section class="hero">
+    <div class="text-section">
+      <h1>Paige Bueckers</h1>
+    
+      <div class="info-lines">
+        <div class="info-row">
+          <div class="info-box">
+            <span class="label">Posisi</span>
+            <span class="value">Guard</span>
+          </div>
+          <div class="info-box">
+            <span class="label">tinggi</span>
+            <span class="value">180 cm</span>
+          </div>
+          <div class="info-box">
+            <span class="label">tanggal lahir</span>
+            <span class="value">October 20, 2001</span>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-box">
+            <span class="label">Perguruan Tinggi / Negara</span>
+            <span class="value">Connecticut (UConn) / USA</span>
+          </div>
+          <div class="info-box">
+            <span class="label">Draft</span>
+            <span class="value">2025 Rnd 1 Pick 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ftpaige">
+      <div class="number-box"></div>
+      <div class="number">5</div>
+      <img src="p.PNG" alt="Paige Bueckers" />
+    </div>
+  </section>
+
+ 
+  <hr class="section-line">
+
+  
+  <section class="bio-section">
+    <p>
+     <span class="highlight">paige Madison Bueckers</span>, atau yang lebih dikenal sebagai Paige Bueckers, adalah pemain bola basket wanita asal
+      Amerika Serikat yang lahir pada <span class="highlight">20 Oktober 2001</span> di Edina, Minnesota. Sejak kecil, Paige sudah menunjukkan bakat luar
+      biasa dalam olahraga bola basket. Ia dikenal memiliki dedikasi tinggi, ketenangan di lapangan, serta kemampuan
+      teknik yang luar biasa.
+    </p>
+    <blockquote>
+    "Generational talent yang hanya muncul sekali dalam satu generasi"
+  </blockquote>
+    <p>
+      Setelah lulus dari sekolah menengah, Paige melanjutkan kariernya di <span class="highlight">University of Connecticut (UConn)</span> — salah satu
+      universitas dengan program bola basket wanita terbaik di Amerika Serikat. Di sana, ia segera menjadi bintang utama
+      tim berkat kemampuan dribble, passing, dan shooting yang tajam. Pada musim pertamanya, ia bahkan dinobatkan sebagai
+      <span class="highlight">AP Player of the Year</span>
+    </p>
+    <p>
+      Tahun 2025 menjadi momen penting dalam kariernya ketika ia terpilih sebagai pilihan pertama secara keseluruhan dalam
+      <span class="highlight">WNBA Draft</span> dan bergabung dengan tim <span class="highlight">Dallas Wings</span>. Paige sering disebut sebagai “generational talent”, yaitu pemain
+      berbakat langka yang hanya muncul sekali dalam satu generasi — seorang atlet dengan kemampuan, mentalitas, dan
+      pengaruh luar biasa, baik di dalam maupun di luar lapangan.
+    </p>
+  </section>
+
+  <hr class="section-line">
+
+  
+  <section class="reason-section">
+    <h2>Kenapa Saya Memilih Paige Bueckers?</h2>
+    <p>
+      Saya memilih Paige Bueckers karena menurut saya ia adalah sosok atlet yang tidak hanya berbakat, tetapi juga memiliki
+      semangat, kerja keras, dan kepribadian yang inspiratif. Perjalanannya dari pemain muda hingga menjadi bintang besar
+      di WNBA menunjukkan bahwa dengan dedikasi dan usaha, mimpi apa pun dapat dicapai.
+    </p>
+  </section>
+
+  <hr class="section-line">
+</body>
+</html>
